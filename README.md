@@ -1,4 +1,10 @@
+![clilog](https://socialify.git.ci/elliotxx/clilog/image?font=Raleway&language=1&name=1&owner=1&pattern=Plus&theme=Light)
+
 # clilog
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/elliotxx/clilog)](https://goreportcard.com/report/github.com/elliotxx/clilog)
+[![GoDoc](https://godoc.org/github.com/elliotxx/clilog?status.svg)](https://godoc.org/github.com/elliotxx/clilog)
+[![License](https://img.shields.io/github/license/elliotxx/clilog.svg)](https://github.com/elliotxx/clilog/blob/main/LICENSE)
 
 A Go library for clear and pretty command-line logging
 
@@ -75,4 +81,3 @@ log.Info("User Profile:").
 ```go
 log.SetNoColor(true)
 log.Info("Running in CI environment")
-```
