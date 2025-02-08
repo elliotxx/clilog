@@ -26,9 +26,51 @@ import (
 )
 
 func main() {
-	log.SetVerbose(true)
-	log.Info("Processing items")
 	log.L(1).P("→").C(log.ColorCyan).Log("Item 1")
-	log.L(1).Success("Done")
 }
+```
+
+## Examples
+
+### Basic Logging
+```go
+log.Info("Application started")
+log.Warn("High memory usage detected")
+log.Success("User login successful")
+log.Error("Database connection failed")
+```
+
+### Hierarchical Logging
+```go
+log.Info("Processing order %d", 1234).
+    L(1).P("→").C(log.ColorCyan).Log("Validating items").
+    L(2).Info("Checking inventory").
+    L(2).Success("Stock available").
+    L(1).P("✓").C(log.ColorGreen).Log("Payment processing").
+    L(1).Error("Shipping address invalid")
+```
+
+### Progress Indicator
+```go
+// Initialize progress bar
+progress := log.New().L(1).P("▰").C(log.ColorBlue)
+
+for i := 0; i <= 10; i++ {
+    progress.Log("Loading: %s", strings.Repeat("▰", i))
+    time.Sleep(300 * time.Millisecond)
+}
+```
+
+### Formatted Data Display
+```go
+log.Info("User Profile:").
+    L(1).Log("Name:    %s", log.Bold("Alice")).
+    L(1).Log("Email:   %s", log.Bold("alice@example.com")).
+    L(1).Log("Balance: %s", log.Bold("$1,234.56"))
+```
+
+### Disable Color Output
+```go
+log.SetNoColor(true)
+log.Info("Running in CI environment")
 ```
