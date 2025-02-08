@@ -2,6 +2,8 @@
 
 A Go library for clear and pretty command-line logging
 
+![image](https://github.com/user-attachments/assets/14380dbf-8a99-4eac-ba39-9d58239f4fc5)
+
 ## Features
 
 - Hierarchical logging with indentation
