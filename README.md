@@ -6,7 +6,7 @@
 [![GoDoc](https://godoc.org/github.com/elliotxx/clilog?status.svg)](https://godoc.org/github.com/elliotxx/clilog)
 [![License](https://img.shields.io/github/license/elliotxx/clilog.svg)](https://github.com/elliotxx/clilog/blob/main/LICENSE)
 
-A Go library for clear and pretty command-line logging
+A Go library for simple and pretty command-line logging
 
 ![image](https://github.com/user-attachments/assets/14380dbf-8a99-4eac-ba39-9d58239f4fc5)
 
